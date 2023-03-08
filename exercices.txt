@@ -1,0 +1,122 @@
+Exercice page 2
+1.
+Créons une fonction qui imprime un rappel sur la console. À l'aide d'une déclaration de fonction, créez une fonction appelée getReminder().
+
+2.
+Dans le corps de la fonction de getReminder(), enregistrez le rappel suivant dans la console : "Arrosez les plantes".
+
+3.
+Créons une autre fonction qui imprime une phrase de voyage espagnole utile sur la console.
+
+À l'aide d'une déclaration de fonction, créez une fonction appelée greetInSpanish().
+
+4.
+Ajoutez du code au corps de la fonction de greetInSpanish() :
+
+Dans le corps de la fonction console.log(), la phrase espagnole suivante dans la console : "Buenas tardes".
+
+Exo page 3
+
+1.
+Imaginez que vous gérez une boutique en ligne. Lorsqu'un client passe une commande, vous lui envoyez une note de remerciement. Créons une fonction pour terminer cette tâche :
+
+Définissez une fonction appelée sayThanks() comme déclaration de fonction.
+Dans le corps de la fonction de sayThanks(), ajoutez du code de sorte que la fonction écrive le message de remerciement suivant sur la console lorsqu'elle est appelée : "Merci pour votre achat ! Nous apprécions votre entreprise.'
+2.
+Appelez sayThanks() pour afficher le message de remerciement dans la console.
+
+3.
+Les fonctions peuvent être appelées autant de fois que nécessaire.
+
+Imaginez que trois clients passent une commande et que vous vouliez envoyer à chacun d'eux un message de remerciement. Mettez à jour votre code pour appeler sayThanks() trois fois.
+
+Exo page 4 
+
+1.
+La fonction sayThanks() fonctionne bien, mais ajoutons le nom du client dans le message.
+
+Ajoutez un paramètre appelé name à la déclaration de fonction pour sayThanks().
+
+2.
+Avec name comme paramètre, il peut être utilisé comme variable dans le corps de la fonction de sayThanks().
+
+À l'aide de la concaténation de noms et de chaînes, modifiez le message de remerciement comme suit : 
+
+Copiez et collez le message ci-dessus dans votre code.
+
+3.
+Un client nommé Cole vient d'acheter quelque chose dans votre boutique en ligne. Appelez sayThanks() et passez 'Cole' comme argument pour envoyer à Cole un message de remerciement personnalisé.
+
+Exercice page 5 
+
+1.
+La fonction makeShoppingList() crée une liste de courses basée sur les éléments qui sont passés à la fonction en tant qu'arguments.
+
+Imaginez que vous achetez toujours du lait, du pain et des œufs chaque fois que vous faites vos courses. Pour faciliter la création d'une liste de courses, attribuons des valeurs par défaut aux paramètres de makeShoppingList().
+
+Changez les paramètres de makeShoppingList() en paramètres par défaut :
+
+Attribuez « lait » comme valeur par défaut de l'élément 1.
+Attribuez « pain » comme valeur par défaut de l'élément 2.
+Attribuez « œufs » comme valeur par défaut de l'élément 3.
+
+Exercice page 6 
+
+1.
+Imaginez si nous avions besoin de commander des moniteurs pour tout le monde dans un bureau et que ce bureau est commodément disposé en forme de grille. Nous pourrions utiliser une fonction pour nous aider à calculer le nombre de moniteurs nécessaires !
+
+Déclarez une fonction monitorCount() qui a deux paramètres. Le premier paramètre est les lignes et le deuxième paramètre est les colonnes.
+
+2.
+Calculons le nombre de moniteurs en multipliant les lignes et les colonnes, puis en retournant la valeur.
+
+Dans le corps de la fonction que vous venez d'écrire, utilisez le mot-clé return pour renvoyer lignes * colonnes.
+
+3.
+Maintenant que la fonction est définie, nous pouvons calculer le nombre de moniteurs nécessaires. Disons que le bureau a 5 lignes et 4 colonnes.
+
+Déclarez une variable nommée numOfMonitors à l'aide du mot-clé const et affectez à numOfMonitors la valeur de l'appel de monitorCount() avec les arguments 5 et 4.
+
+4.
+Pour vérifier que la fonction a fonctionné correctement, connectez numOfMonitors à la console.
+
+Exercice page 7 
+
+1.
+Dans l'exercice précédent, nous avons créé une fonction pour trouver le nombre de moniteurs à commander pour un bureau. Écrivons maintenant une autre fonction qui utilise la fonction monitorCount pour déterminer le prix.
+
+Sous monitorCount Créez une déclaration de fonction nommée costOfMonitors qui a deux paramètres, le premier paramètre est des lignes et le second paramètre est des colonnes. Laissez le corps de la fonction vide pour le moment.
+
+2.
+Il est temps d'ajouter du code au corps de la fonction de costOfMonitors pour calculer le coût total.
+
+Ajoutez une instruction de retour qui renvoie la valeur de l'appel de monitorCount(rows, columns) multiplié par 200.
+
+3.
+Nous devrions économiser le coût sur une variable.
+
+Déclarez une variable nommée totalCost à l'aide du mot-clé const. Attribuez à totalCost la valeur de l'appel de costOfMonitors() avec les arguments 5 et 4 respectivement.
+
+4.
+Pour vérifier que la fonction a fonctionné correctement, connectez totalCost à la console.
+
+Exercice page 8 
+
+1.
+Disons que nous avons une plante que nous devons arroser une fois par semaine le mercredi. Nous pourrions définir une expression de fonction pour nous aider à vérifier le jour de la semaine et si la plante a besoin d'être arrosée :
+Créez une variable nommée plantNeedsWater à l'aide du mot-clé de variable const.
+Attribuez une fonction anonyme qui prend un paramètre de jour à plantNeedsWater.
+2.
+Nous devons maintenant ajouter du code au corps de la fonction de plantNeedsWater() :
+Dans le corps de la fonction, ajoutez une condition conditionnelle if qui vérifie day === 'Wednesday'.
+Si la condition est véridique, à l'intérieur du bloc de code if, utilisez le mot-clé return pour renvoyer true.
+3.
+Les jours qui ne sont pas 'mercredi', plantNeedsWater() doit retourner false :
+Ajoutez une instruction else après l'instruction if.
+Dans l'instruction else, utilisez le mot-clé return pour renvoyer false.
+4.
+Appelez plantNeedsWater() et passez 'Tuesday' comme argument.
+
+5.
+Vérifions que plantNeedsWater() a renvoyé la valeur attendue.
+Connectez plantNeedsWater('Tuesday') à la console. Si cela a fonctionné correctement, vous devriez voir false connecté à la console.
